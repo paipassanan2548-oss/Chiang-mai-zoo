@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สวนสัตว์เชียงใหม่ - Chiang Mai Zoo</title>
+    <!-- เรียกใช้ Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- เรียกใช้ Font Awesome สำหรับไอคอน -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- เรียกใช้ฟอนต์ Prompt จาก Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Prompt', sans-serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=1920&q=80') center/cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-paw text-green-600 text-2xl"></i>
+                    <span class="font-bold text-xl text-green-800">Chiang Mai Zoo</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-600 hover:text-green-600 font-medium transition">หน้าแรก</a>
+                    <a href="#highlights" class="text-gray-600 hover:text-green-600 font-medium transition">โซนสัตว์ต่างๆ</a>
+                    <a href="#info" class="text-gray-600 hover:text-green-600 font-medium transition">ข้อมูลการเข้าชม</a>
+                </div>
+                <button class="md:hidden text-gray-600 text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center mt-16 md:mt-0 pt-16">
+        <div class="px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">ยินดีต้อนรับสู่ สวนสัตว์เชียงใหม่</h1>
+            <p class="text-lg md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                สัมผัสธรรมชาติอย่างใกล้ชิดและพบกับสัตว์ป่านานาชนิด บนพื้นที่กว่า 531 ไร่ เชิงดอยสุเทพ
+            </p>
+            <a href="#highlights" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">
+                เริ่มสำรวจกันเลย <i class="fa-solid fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-green-800">โซนยอดฮิตห้ามพลาด</h2>
+            <div class="h-1 w-20 bg-green-500 mx-auto mt-4 rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 group">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" alt="Aquarium" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">เชียงใหม่ ซู อควาเรียม</h3>
+                    <p class="text-gray-600 text-sm">อุโมงค์ปลาน้ำจืดและน้ำเค็มที่ยาวที่สุดในเอเชียตะวันออกเฉียงใต้ ตื่นตากับสัตว์น้ำกว่า 20,000 ตัว</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 group">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1547720074-e55d506992d1?auto=format&fit=crop&w=800&q=80" alt="Giraffe" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">โซนแอฟริกา</h3>
+                    <p class="text-gray-600 text-sm">พบกับความน่ารักของยีราฟ ม้าลาย และนกกระจอกเทศ พร้อมกิจกรรมให้อาหารสัตว์อย่างใกล้ชิด</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 group">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?auto=format&fit=crop&w=800&q=80" alt="Leopard" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">อาณาจักรสัตว์นักล่า</h3>
+                    <p class="text-gray-600 text-sm">ชมความสง่างามของเสือโคร่ง สิงโต และเสือดาว ในพื้นที่ที่จัดสภาพแวดล้อมเสมือนจริง</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="bg-green-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-green-800 mb-6">ข้อมูลการเข้าชม</h2>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa-regular fa-clock text-green-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">เวลาทำการ</h4>
+                                <p class="text-gray-600">เปิดให้บริการทุกวัน 08:00 น. - 17:00 น.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-ticket text-green-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">ค่าเข้าชม (ผู้ใหญ่ / เด็ก)</h4>
+                                <p class="text-gray-600">ชาวไทย: 130 บาท / 40 บาท<br>ชาวต่างชาติ: 350 บาท / 120 บาท</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-location-dot text-green-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">ที่ตั้ง</h4>
+                                <p class="text-gray-600">100 ถ.ห้วยแก้ว ต.สุเทพ อ.เมือง จ.เชียงใหม่ 50200</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <button onclick="alert('ฟังก์ชันนี้เตรียมไว้สำหรับเชื่อมต่อระบบจองตั๋วออนไลน์ในอนาคตครับ')" class="mt-8 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition duration-300">
+                        จองตั๋วออนไลน์
+                    </button>
+                </div>
+                
+                <div class="md:w-1/2 w-full">
+                    <!-- Google Maps Embed (สวนสัตว์เชียงใหม่) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.7765103442127!2d98.94318741537756!3d18.80939528724128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a5c68f7b767%3kr0x8b30d892416b0f0!2sChiang%20Mai%20Zoo!5e0!3m2!1sen!2sth!4v1680000000000!5m2!1sen!2sth" 
+                            width="100%" height="350" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
+        <p>&copy; 2026 Chiang Mai Zoo Web App - สร้างเพื่อการศึกษา</p>
+        <div class="flex justify-center gap-4 mt-4">
+            <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fa-brands fa-line text-xl"></i></a>
+        </div>
+    </footer>
+
+    <!-- Simple Script for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
